@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="container">
+        <div class="pb-3">
+            <a class="btn btn-primary" href="{{ route('comics.create') }}">Crea nuovo record</a>
+        </div>
         <table class="table">
             <thead>
                 <tr>

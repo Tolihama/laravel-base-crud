@@ -16,9 +16,16 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <img src="{{ $comic->thumb }}" alt="{{ 'Cover ' . $comic->title }}">
-            <p>{{ $comic->description }}</p>
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ $comic->thumb }}" alt="{{ 'Cover ' . $comic->title }}">
+            </div>
+            <div class="col-10">
+                <p>{{ $comic->description }}</p>
+            </div>
+        </div>
+        <div class="pt-3 text-center">
+            <a class="btn btn-primary" href="{{ route('comics.index') }}">Torna ai comics</a>
         </div>
     </div>
 @endsection
