@@ -26,6 +26,7 @@
                         <td>{{ $comic->price }}</td>
                         <td>
                             <a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}">Show</a>
+                            <a class="btn btn-success" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
                         </td>
                     </tr>
                 @endforeach
